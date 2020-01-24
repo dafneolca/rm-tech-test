@@ -1,0 +1,176 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .page-header {
+    display: none;
+  }
+
+  .hide-menu {
+    visibility: hidden;
+  }
+
+  .mobile-header-toggle {
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: rgb(35, 57, 125);
+    width: 100vw;
+  }
+
+  .logo {
+    width: 33vw;
+  }
+
+  .menu {
+    font-size: 60px !important;
+    padding: 10px;
+    position: relative;
+    left: 40vw;
+    color: white;
+  }
+
+  .prev,
+  .next {
+    top: 55%;
+    color: white;
+  }
+
+  .mobile-navigation {
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    z-index: 500;
+    width: 80vw;
+  }
+
+  .mobile-navigation ul {
+    padding-left: 0;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 400;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .mobile-navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 25px;
+    color: rgb(35, 57, 125);
+    border-bottom: 1px solid rgb(35, 57, 125);
+  }
+
+  .user-contact-section {
+    display: flex;
+  }
+
+  .user-contact-section button,
+  .login {
+    font-size: 56px;
+  }
+
+  .btn,
+  .mobile-dropdown-toggle,
+  .mobile-dropdown-menu,
+  .mobile-dropdown-item {
+    width: 100vw;
+    font-size: 24px !important;
+  }
+
+  .mobile-search-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    font-size: 25px;
+    margin: 4px auto;
+  }
+
+  .search-bar {
+    text-align: center;
+    width: 95vw;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 4px auto;
+  }
+
+  .search-button {
+    width: 95vw;
+    margin: 4px auto;
+  }
+
+  .searchBox {
+    width: 80vw;
+  }
+
+  .mobile-header-div .top-banner {
+    width: 95vw;
+    margin: auto;
+  }
+
+
+  /* MAIN */
+  .main-content {
+    flex-direction: column;
+  }
+
+  .carousel-container,
+  .image-full-view {
+    height: 35vh;
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .image-preview {
+    display: none;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .location-details {
+    width: 100%;
+  }
+
+  .best-price-stamp {
+    display: none;
+  }
+
+  .data-table-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sun-days,
+  .reserve {
+    justify-content: center;
+  }
+
+  .dates-and-price-table {
+    margin: 0 auto;
+  }
+
+  .date-table {
+    margin: 15px 18px;
+  }
+
+  .price-table {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
