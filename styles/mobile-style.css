@@ -1,5 +1,9 @@
 @media (min-width: 320px) and (max-width: 768px) {
-  .page-header {
+
+  .page-header,
+  .hide,
+  .image-preview,
+  .best-price-stamp {
     display: none;
   }
 
@@ -9,9 +13,8 @@
 
   .mobile-header-toggle {
     display: flex;
-    /* justify-content: space-between; */
     background-color: rgb(35, 57, 125);
-    width: 100vw;
+    align-items: center;
   }
 
   .logo {
@@ -22,7 +25,7 @@
     font-size: 60px !important;
     padding: 10px;
     position: relative;
-    left: 40vw;
+    left: 50vw;
     color: white;
   }
 
@@ -37,12 +40,9 @@
     flex-direction: column;
     background-color: white;
     position: absolute;
+    right: 0;
     z-index: 500;
-    width: 80vw;
-  }
-
-  .mobile-navigation ul {
-    padding-left: 0;
+    width: 60vw;
   }
 
   .backdrop {
@@ -54,6 +54,10 @@
     background-color: black;
     opacity: 0.4;
     z-index: 400;
+  }
+
+  .mobile-navigation ul {
+    padding-left: 0;
   }
 
   .navigation ul {
@@ -82,18 +86,35 @@
     font-size: 56px;
   }
 
-  .btn,
-  .mobile-dropdown-toggle,
-  .mobile-dropdown-menu,
-  .mobile-dropdown-item {
-    width: 100vw;
-    font-size: 24px !important;
+  /* DROPDOWN */
+  .dropdown-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown {
+    width: 95vw;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 98vw;
+    font-size: 25px;
+    z-index: 300;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    padding: 10px;
   }
 
   .mobile-search-container {
     display: flex;
     flex-direction: column;
-    /* width: 100vw; */
     font-size: 25px;
     margin: 4px auto;
   }
@@ -106,20 +127,27 @@
     margin: 4px auto;
   }
 
+  .search-bar input {
+    font-size: 20px;
+  }
+
   .search-button {
     width: 95vw;
     margin: 4px auto;
   }
 
-  .searchBox {
+  .search-box {
     width: 80vw;
   }
 
-  .mobile-header-div .top-banner {
+  .top-banner {
     width: 95vw;
     margin: auto;
   }
 
+  .top-banner p {
+    font-size: 20px;
+  }
 
   /* MAIN */
   .main-content {
@@ -133,20 +161,9 @@
     margin: 0 auto;
   }
 
-  .image-preview {
-    display: none;
-  }
-
-  .info-container {
-    width: 100%;
-  }
-
+  .info-container,
   .location-details {
     width: 100%;
-  }
-
-  .best-price-stamp {
-    display: none;
   }
 
   .data-table-row {
@@ -171,6 +188,43 @@
     padding: 0;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .discount-box {
+    margin: auto;
+    width: 25vw;
+    font-size: 25px;
+  }
+
+  .discount-box p {
+    margin: 15px;
+  }
+
+  .old-price {
+    font-size: 20px;
+  }
+
+  .new-price {
+    margin: 10px 0;
+  }
+
+  .new-price span {
+    font-size: 50px;
+  }
+
+  .final-price span {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .free-cancellation {
+    font-size: 20px;
+    color: #74CE6D;
+  }
+
+  .choose-box {
+    font-size: 30px;
+    margin: 15px 0;
   }
 
 }

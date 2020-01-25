@@ -2,6 +2,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 var mobileMenuView = false;
+var dropdownVisible = false;
 
 function login() {
     console.log('Hello, you are now logged in')
@@ -18,10 +19,19 @@ function displayMobileMenu() {
 }
 
 // CUSTOM DROPDOWN TOGGLE
+
+function toggleDropdownDisplay() {
+    dropdownVisible = !dropdownVisible;
+    var dropdownOptions = document.getElementById('dropdownMenu');
+    dropdownVisible ? dropdownOptions.classList.remove('hide') : dropdownOptions.classList.add('hide')
+}
+
+
 function dropdownSelection(item) {
-    var origButtonString = document.getElementById('dropdown-toggle');
+    var origButtonString = document.getElementById('dropdownMenuButton');
     var newButtonString = item.innerHTML;
-    origButtonString.innerHTML = newButtonString;
+    origButtonString.innerHTML = `${newButtonString} <i class=\"fa fa-caret-down\"></i>`;
+    toggleDropdownDisplay();
 }
 
 
