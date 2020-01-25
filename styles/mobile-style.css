@@ -1,7 +1,6 @@
 @media (min-width: 320px) and (max-width: 768px) {
 
   .page-header,
-  .hide,
   .image-preview,
   .best-price-stamp {
     display: none;
@@ -90,12 +89,16 @@
   .dropdown-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .dropdown {
     width: 95vw;
     font-size: 25px;
     padding: 10px 0;
+    margin: 0 auto;
+    border: 0;
+    background-color: white;
   }
 
   .dropdown-menu {
@@ -105,6 +108,10 @@
     width: 98vw;
     font-size: 25px;
     z-index: 300;
+  }
+
+  .hide {
+    display: none;
   }
 
   .dropdown-menu a {
