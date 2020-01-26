@@ -50,7 +50,7 @@
   }
 
   .backdrop {
-    position: absolute;
+    position: fixed;
     top: 80px;
     left: 0;
     height: 100%;
@@ -233,5 +233,4 @@
     font-size: 30px;
     margin: 15px 0;
   }
-
 }
