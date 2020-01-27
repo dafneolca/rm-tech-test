@@ -39,11 +39,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-a {
-  text-decoration: none;
-}
-
-
 /* hide mobile only */
 .mobile-header {
   display: none;
@@ -53,20 +48,11 @@ a {
   display: none;
 }
 
-/* .mobile-header-div {
-  display: none;
-} */
-
 .mobile-navigation,
 .dropdown-container,
 .mobile-search-container {
   display: none;
 }
-
-
-/* .mobile-search-container {
-  display: none;
-} */
 
 /* header */
 .page-header {
@@ -449,6 +435,7 @@ a {
   padding: 0 10px
 }
 
-.free-cancellation {
+.free-cancellation,
+.green {
   color: #74CE6D;
 }

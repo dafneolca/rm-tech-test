@@ -1,3 +1,4 @@
+/* Large Mobile + Small tablet */
 @media (min-width: 480px) and (max-width: 768px) {
 
   .info-container,
@@ -27,7 +28,7 @@
   }
 }
 
-
+/* Tablet */
 @media (min-width: 769px) and (max-width: 990px) {
   .page-header .navigation {
     display: none;
@@ -128,11 +129,10 @@
     justify-content: center;
     align-items: center;
   }
-
 }
 
 
-
+/* iPad pro portrait orientation */
 @media (min-width: 1024px) and (orientation: portrait) {
   h1 {
     font-size: 45px;
@@ -140,20 +140,28 @@
 
   h3 {
     text-align: center;
+    font-size: 2em;
   }
 
   .header {
     width: 100%;
   }
 
+  .top-banner p {
+    font-size: 25px;
+  }
+
   .navigation ul {
     font-size: 13px;
+  }
+
+  .experiences-summary {
+    padding: 20px 0;
   }
 
   .carousel-container {
     width: 100%;
   }
-
 
   .main-content {
     display: flex;
@@ -169,7 +177,8 @@
   }
 
   .image-preview {
-    bottom: 9vh;
+    position: absolute;
+    bottom: 1vh;
     left: 5.39vw;
   }
 
@@ -178,20 +187,23 @@
     padding: 16px 65px;
   }
 
+  .prev:active,
+  .next:active {
+    background: none;
+  }
+
   .info-container {
     width: 100%;
   }
 
+  .reserve,
+  .sun-days,
   .trip-info-table div {
+    font-size: 25px;
     justify-content: center;
   }
 
   .location-details {
-    justify-content: center;
-  }
-
-  .reserve,
-  .sun-days {
     justify-content: center;
   }
 
@@ -208,5 +220,9 @@
 
   .choose-option-button p {
     padding: 10px;
+  }
+
+  .discount-box {
+    margin: auto;
   }
 }
